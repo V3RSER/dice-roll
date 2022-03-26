@@ -3,7 +3,7 @@ import { view as ViewTypes } from "../constants/viewActionTypes";
 
 export const fetchRoll = (state) => async (dispatch) => {
   dispatch({ type: ViewTypes.LOADING });
-  return fetch(`http://localhost:8080/api/roll`, {
+  return fetch(`https://api-roll-dice.herokuapp.com/api/roll`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
