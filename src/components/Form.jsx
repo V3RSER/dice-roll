@@ -9,26 +9,26 @@ const From = (props) => {
     props.dispatch(fetchRoll(state));
   };
   return (
-      <form className="form-group m-0 mt-2" onSubmit={onSubmit}>
-        <div className="col-xs-2">
-          <div className="input-group mb-3">
-            <input
-              type="text"
-              id="name"
-              className="form-control"
-              placeholder="Nombre"
-              onChange={(e) => setState(e.target.value)}
-            ></input>
-            <button
-              className="btn btn-success"
-              type="submit"
-              disabled={props.loading}
-            >
-              Lanzar
-            </button>
-          </div>
+    <form className="form-group m-0 mt-2" onSubmit={onSubmit}>
+      <div className="col-xs-2">
+        <div className="input-group mb-3">
+          <input
+            type="text"
+            id="name"
+            className="form-control"
+            placeholder="Nombre"
+            onChange={(e) => setState(e.target.value)}
+          ></input>
+          <button
+            className="btn btn-success"
+            type="submit"
+            disabled={props.loading}
+          >
+            Lanzar
+          </button>
         </div>
-      </form>
+      </div>
+    </form>
   );
 };
 
