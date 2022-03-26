@@ -8,7 +8,7 @@ const Dice = (props) => {
         <img
           className="mx-2 my-5"
           style={styles}
-          src={"/images/dice_" + props.value + ".png"}
+          src={"/dice-roll/images/dice_" + props.value + ".png"}
           alt={props.value}
         ></img>
       ) : (
